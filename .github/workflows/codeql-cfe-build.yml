@@ -1,8 +1,7 @@
 name: "CodeQL cFE Build Analysis"
 
 on:
-  push:
-  pull_request:
+  workflow_dispatch:
 
 env:
   SIMULATION: native
@@ -108,3 +107,9 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v1
+        
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: osal-sarif
+          path: /home/runner/work/osal/results/cpp.sarif
