@@ -91,7 +91,7 @@ jobs:
 
   run-cfs:
     name: Run
-    needs: build-cfs
+    needs: build-osal
     runs-on: ubuntu-18.04
 
     strategy:
