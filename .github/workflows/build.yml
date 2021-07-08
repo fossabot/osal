@@ -47,7 +47,7 @@ jobs:
       - name: Build
         run: make -j 
 
-    test-osal:
+  test-osal:
     name: Test
     runs-on: ubuntu-18.04
     needs: build-osal
