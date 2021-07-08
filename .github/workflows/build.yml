@@ -89,7 +89,7 @@ jobs:
       - name: Check Coverage
         run: make lcov
 
- run-cfs:
+  run-cfs:
     name: Run
     needs: build-cfs
     runs-on: ubuntu-18.04
