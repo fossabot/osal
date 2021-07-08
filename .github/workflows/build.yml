@@ -89,7 +89,7 @@ jobs:
       - name: Check Coverage
         run: make lcov
 
-  run-cfs:
+  run-osal:
     name: Run
     needs: build-osal
     runs-on: ubuntu-18.04
@@ -110,14 +110,14 @@ jobs:
         with:
           submodules: true
 
-      # Setup the build system
-      - name: Copy sample_defs
+
+      - name: Set up for build
         run: |
-          cp ./cfe/cmake/Makefile.sample Makefile
-          cp -r ./cfe/cmake/sample_defs sample_defs
-      # Setup the build system
-      - name: Make Install
-        run: make install
+          cp Makefile.sample Makefile
+          make prep
+          
+      - name: Build
+        run: make -j 
 
       - name: List cpu1
         run: ls build/exe/cpu1/
