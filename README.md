@@ -1,5 +1,6 @@
 ![Static Analysis](https://github.com/nasa/osal/workflows/Static%20Analysis/badge.svg)
 ![Format Check](https://github.com/nasa/osal/workflows/Format%20Check/badge.svg)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FArielSAdamsNASA%2Fosal.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FArielSAdamsNASA%2Fosal?ref=badge_shield)
 
 # Core Flight System : Framework : Operating System Abstraction Layer
 
@@ -592,3 +593,7 @@ See all open issues and closed to milestones later than this version.
 For best results, submit issues:questions or issues:help wanted requests at <https://github.com/nasa/cFS>.
 
 Official cFS page: <http://cfs.gsfc.nasa.gov>
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FArielSAdamsNASA%2Fosal.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FArielSAdamsNASA%2Fosal?ref=badge_large)
